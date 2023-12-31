@@ -15,7 +15,7 @@ var app = builder.Build(); // this service is building
 
 app.MapControllerRoute(
     name:"Defaullt",                           // elle yazmak istersek de  pattern i falan manuel yazýyoruz.
-    pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=meeting}/{action=Index}/{id?}"
 );
 
 app.Run(); // and running  

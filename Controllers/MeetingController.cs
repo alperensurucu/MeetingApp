@@ -2,11 +2,11 @@
 
 namespace MeetingApp.Controllers
 {
-    public class HomeController : Controller
+    public class MeetingController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
     }
-}
+} 
