@@ -1,3 +1,10 @@
-﻿<h1>Merhaba</h1>
-<h2>Toplantı katılım durumunuzu belirtiniz.</h2>
-<a href="#">Başvuru Yap</a>
+﻿@{
+    Layout = "_Layout2";
+
+}
+<h1 class="h4">Merhaba</h1>
+<p>Toplantı katılım durumunuzu belirtiniz.</p>
+<a class="btn btn-sm btn-outline-primary" asp-controller="Meeting" asp-action="Apply" >Başvuru Yap</a> 
+
+                @*_ViewImports dosyası içine tag helper eklediğimiz için  
+                  "asp controller ve asp action" kullanabiliyoruz.*@
