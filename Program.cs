@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews(); //added service which is MVC 
 var app = builder.Build(); // this service is building 
 
+app.UseStaticFiles(); //wwwroot altýndaki dosyalar eriþime açýk olmasý için yazdýk
+
 // MVS  ; added servce of this
 // Rest API ; we will add  different services for rest api
 // Razor pages  ; we eill add different service for razor pages
