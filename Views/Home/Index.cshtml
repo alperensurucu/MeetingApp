@@ -1,11 +1,26 @@
-﻿@{
+﻿@model MeetingApp.Models.MeetingInfo
+@{
     ViewBag.Title = "Toplantı Başvuru";
     Layout = "_Layout2";
 
 }
-<h1 class="h4">@ViewData["selamlama"],@ViewData["Username"]</h1>
-<p>Toplantı katılım durumunuzu belirtiniz.</p>
-<a class="btn btn-sm btn-outline-primary" asp-controller="Meeting" asp-action="Apply" >Başvuru Yap</a> 
+ 
+
+<main class=" text-center">
+    <h1 class="h4">@ViewData["selamlama"],@ViewData["Username"]</h1>
+    <p>Toplantı katılım durumunuzu belirtiniz.</p>
+
+    <div class="card my-2">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Model.Location</li>
+            <li class="list-group-item">@Model.Date.ToString("dd/MM/yyyy HH:mm:ss") terihinde gerçekleşecek</li>
+            <li class="list-group-item">@Model.NumberOfPeople Katılımcı</li>
+        </ul>
+    </div>
+
+    <a class="btn btn-sm btn-outline-primary" asp-controller="Meeting" asp-action="Apply">Başvuru Yap</a> 
+
+</main>
 
                 @*_ViewImports dosyası içine tag helper eklediğimiz için  
                   "asp controller ve asp action" kullanabiliyoruz.*@
