@@ -12,6 +12,7 @@ namespace MeetingApp.Models
             _users.Add(new UserInfo() { Name = "Ali", Email = "Ali@gmail.com", Phone = "22222", WillAttend = false });
             _users.Add(new UserInfo() { Name = "Seden", Email = "Seden@gmail.com", Phone = "33333", WillAttend = true });
             _users.Add(new UserInfo() { Name = "Özkan", Email = "Özkan@gmail.com", Phone = "44444", WillAttend = true });
+            _users.Add(new UserInfo() { Name = "nujin", Email = "nujin@gmail.com", Phone = "55555", WillAttend = false });
         }
         
         public static List<UserInfo> Users
