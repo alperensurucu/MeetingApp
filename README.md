@@ -6,5 +6,5 @@
 # Efficient use of ViewBag and ViewData concepts is emphasized throughout the project.
 # Data is received using Model Binding, and features like Tag Helpers and form validation have been added to enhance the project.
 # Upon completing these steps, the project is considered finished. 
-# Wishing everyone a healthy, peaceful, and happy year ahead in this first project of 2024! :)
+# Wishing everyone a healthy, peaceful, and happy year ahead from this first project of 2024! :)
 
